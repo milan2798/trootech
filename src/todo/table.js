@@ -39,13 +39,13 @@ function BasicTable(props) {
                     <TableHead>
                         <TableRow>
                             <TableCell>UserName</TableCell>
-                            <TableCell align="right">Gender</TableCell>
-                            <TableCell align="right">Hobby</TableCell>
-                            <TableCell align="right">Age</TableCell>
-                            <TableCell align="right">Task</TableCell>
-                            <TableCell align="right">Status</TableCell>
-                            <TableCell align="right">Date</TableCell>
-                            <TableCell align="right">Action</TableCell>
+                            <TableCell align="center">Gender</TableCell>
+                            <TableCell align="center">Hobby</TableCell>
+                            <TableCell align="center">Age</TableCell>
+                            <TableCell align="center">Task</TableCell>
+                            <TableCell align="center">Status</TableCell>
+                            <TableCell align="center">Date</TableCell>
+                            <TableCell align="center">Action</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
