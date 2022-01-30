@@ -9,3 +9,9 @@
     width:80%;
     margin:auto;
 }
+
+.divStyle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

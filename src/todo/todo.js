@@ -81,17 +81,21 @@ class Todo extends Component {
                 <div className='center'>
                     <h2>To do List</h2>
                     <TextField id="standard-basic" label="username" value={this.state.user} onChange={this.handleUser} />
-                    <br/>
+                    <br />
                     <FormControl component="fieldset">
-                        <FormLabel component="legend">Gender</FormLabel>
-                        <RadioGroup aria-label="gender" name="gender1" value={this.state.radio} onChange={this.handleChange}>
-                            <FormControlLabel value="female" control={<Radio />} label="Female" />
-                            <FormControlLabel value="male" control={<Radio />} label="Male" />
-                        </RadioGroup>
+                        <div className="divStyle">
+                            <FormLabel component="legend" style={{ marginRight: '30px' }}>Gender</FormLabel>
+                            <RadioGroup row
+                                aria-labelledby="demo-row-radio-buttons-group-label"
+                                name="row-radio-buttons-group" value={this.state.radio} onChange={this.handleChange}>
+                                <FormControlLabel value="female" control={<Radio />} label="Female" />
+                                <FormControlLabel value="male" control={<Radio />} label="Male" />
+                            </RadioGroup>
+                        </div>
                     </FormControl>
-                    <div>
-                        <FormLabel component="legend">Hobby</FormLabel>
-                        <br/>
+                    <div className="divStyle">
+                        <FormLabel component="legend" style={{ marginRight: '30px' }}>Hobby</FormLabel>
+                        <br />
                         <FormControlLabel
                             control={
                                 <Checkbox
@@ -128,15 +132,15 @@ class Todo extends Component {
                     </div>
                     <TextField id="standard-basic" label="Age ( 18 to 55 )" onChange={this.handleRange} value={this.state.range} type="range" min="18" max="28" />
                     <TextField id="standard-basic" label="taskname" value={this.state.task} onChange={this.handleTask} required />
-                    <br/>
-                    <div style={{alignSelf:"start"}}>
-                        <InputLabel id="demo-simple-select-label" style={{display:"inline",marginRight:'30px'}}>Status</InputLabel>
+                    <br />
+                    <div style={{ alignSelf: "start" }}>
+                        <InputLabel id="demo-simple-select-label" style={{ display: "inline", marginRight: '30px' }}>Status</InputLabel>
                         <Select
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
                             value={this.state.status}
                             onChange={this.handleStatus}
-                            style={{width:'100px'}}
+                            style={{ width: '100px' }}
                         >
                             <MenuItem value="active">Active</MenuItem>
                             <MenuItem value="inactive">InActive</MenuItem>
@@ -158,7 +162,6 @@ class Todo extends Component {
                         />
                     </MuiPickersUtilsProvider>
                     <Button onClick={this.handleSubmit} variant="contained" color="primary">ADD</Button>
-                    {console.log("this.props.tasks===>", this.props.tasks)}
                 </div>
                 <br />
                 <br />

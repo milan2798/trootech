@@ -1,8 +1,8 @@
-export const addTask = (contact) => {
-  console.log("contact=====>",contact)
+export const addTask = (task) => {
+  console.log("contact=====>",task)
     return {
       type: "ADD_TASK",
-      contact
+      task:task
     };
   };
   
@@ -17,5 +17,12 @@ export const addTask = (contact) => {
   export const getTask = () => {
     return {
       type: "GET_TASK"
+    };
+  };
+  export const updateTask = (id,task) => {
+    return {
+      type: "UPDATE_TASK",
+      id,
+      task:task 
     };
   };
