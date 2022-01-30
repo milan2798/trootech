@@ -42,9 +42,9 @@ function BasicTable(props) {
                             <TableCell align="right">Gender</TableCell>
                             <TableCell align="right">Hobby</TableCell>
                             <TableCell align="right">Age</TableCell>
-                            <TableCell align="right">Date</TableCell>
                             <TableCell align="right">Task</TableCell>
                             <TableCell align="right">Status</TableCell>
+                            <TableCell align="right">Date</TableCell>
                             <TableCell align="right">Action</TableCell>
                         </TableRow>
                     </TableHead>
